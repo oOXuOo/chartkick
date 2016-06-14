@@ -3783,7 +3783,7 @@ module.exports = {
         if (base.isBefore(other)) {
             res = positiveMomentsDifference(base, other);
         } else {
-			base = [other, other=base][0]
+			base = [other, other=base][0];
             res = positiveMomentsDifference(base, other);
             res.milliseconds = -res.milliseconds;
             res.months = -res.months;
